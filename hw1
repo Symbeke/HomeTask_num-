@@ -1,0 +1,8 @@
+const http = require ('http')
+const fs= require ('fs')
+let num = 0;
+const app = http.createServer((req,res)=>{
+    res.writeHead(200)
+    return res.end(String(num++))
+})
+app.listen(5000)
